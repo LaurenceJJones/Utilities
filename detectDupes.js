@@ -3,7 +3,9 @@ const fs = require('fs');
 const crypto = require('crypto');
 const syncDir = util.promisify(fs.readdir);
 const syncFile = util.promisify(fs.readFile);
-const dest = 'ENTER OUTPUT PATH'; //Best to be a full folder URL EG c:/Temp
+const dest = 'ENTER OUTPUT PATH';
+//Best to be a full folder URL EG c:/Temp/
+//Please end all folder paths with '/' at end
 
 function copy(dir , md5){
     //Test to see if folder exists if not make dir
@@ -71,5 +73,6 @@ async function init(string) {
         copy(element.path,element.val)
     }
 }
-//Always best to use full URL c:/temp or /usr/temp
+//Always best to use full URL c:/temp/ or /usr/temp/
 init('ENTER INPUT FOLDER')
+//Please end all folder paths with '/' at end
