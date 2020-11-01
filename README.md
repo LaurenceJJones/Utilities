@@ -1,5 +1,5 @@
 # Utilities
-Bunch of useful script snippets that can easily be reused
+A collection of useful script snippets that can easily be reused
 
 ### Detect Dupes
 ----------------
